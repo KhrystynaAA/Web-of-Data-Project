@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7728464d039a5c6f75d7159291ef15e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7728464d039a5c6f75d7159291ef15e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7728464d039a5c6f75d7159291ef15e5 = L.map(
+                "map_7728464d039a5c6f75d7159291ef15e5",
+                {
+                    center: [59.329444444, 18.068611111],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_be53973f86dced018275b472fe1c107e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_be53973f86dced018275b472fe1c107e.addTo(map_7728464d039a5c6f75d7159291ef15e5);
+        
+    
+            var marker_5045a5669a5f87b62f5bb5840d581306 = L.marker(
+                [59.329444444, 18.068611111],
+                {
+}
+            ).addTo(map_7728464d039a5c6f75d7159291ef15e5);
+        
+    
+        var popup_8541a59d5cb8dec12c772a6037e8e732 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f217966c6e8bee9b5c0852cd45e4712 = $(`<div id="html_2f217966c6e8bee9b5c0852cd45e4712" style="width: 100.0%; height: 100.0%;">Stockholm (Population: 984748)</div>`)[0];
+                popup_8541a59d5cb8dec12c772a6037e8e732.setContent(html_2f217966c6e8bee9b5c0852cd45e4712);
+            
+        
+
+        marker_5045a5669a5f87b62f5bb5840d581306.bindPopup(popup_8541a59d5cb8dec12c772a6037e8e732)
+        ;
+
+        
+    
+    
+            marker_5045a5669a5f87b62f5bb5840d581306.bindTooltip(
+                `<div>
+                     Capital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cluster_d02df02f93a671637f76be30eda4275b = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_81f53bcef4dbb5368b2319a1d785ff89 = L.marker(
+                [59.335, 17.5425],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_8f56a6cd0b240875baf7aaa109fabdd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81f53bcef4dbb5368b2319a1d785ff89.setIcon(icon_8f56a6cd0b240875baf7aaa109fabdd2);
+        
+    
+        var popup_cbc67824c138388164289b3f9a7ecd3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3cfd40be2cc3eeb477eb2bff88f4f7a = $(`<div id="html_a3cfd40be2cc3eeb477eb2bff88f4f7a" style="width: 100.0%; height: 100.0%;">UNESCO Site: Birka and Hovgården</div>`)[0];
+                popup_cbc67824c138388164289b3f9a7ecd3f.setContent(html_a3cfd40be2cc3eeb477eb2bff88f4f7a);
+            
+        
+
+        marker_81f53bcef4dbb5368b2319a1d785ff89.bindPopup(popup_cbc67824c138388164289b3f9a7ecd3f)
+        ;
+
+        
+    
+    
+            var marker_1cf725cc6277e23d874a115fb4f64b5e = L.marker(
+                [59.31694444, 17.87861111],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_f88e5f6512a8b54cdccb1bc1045033a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1cf725cc6277e23d874a115fb4f64b5e.setIcon(icon_f88e5f6512a8b54cdccb1bc1045033a1);
+        
+    
+        var popup_3fbb868cb897a1747770ef2a1d753c52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9af2326787f6e746dcb2ced55f25e9a3 = $(`<div id="html_9af2326787f6e746dcb2ced55f25e9a3" style="width: 100.0%; height: 100.0%;">UNESCO Site: Chinese Pavilion at Drottningholm</div>`)[0];
+                popup_3fbb868cb897a1747770ef2a1d753c52.setContent(html_9af2326787f6e746dcb2ced55f25e9a3);
+            
+        
+
+        marker_1cf725cc6277e23d874a115fb4f64b5e.bindPopup(popup_3fbb868cb897a1747770ef2a1d753c52)
+        ;
+
+        
+    
+    
+            var marker_85885ae105a09c6b3c6a64220cba55ce = L.marker(
+                [59.321694, 17.886383],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_f42e79f5edd85f0a19ab835ab6f598a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_85885ae105a09c6b3c6a64220cba55ce.setIcon(icon_f42e79f5edd85f0a19ab835ab6f598a5);
+        
+    
+        var popup_b9ed00b6a0a9f2db17fe5c6f695f6c83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1bfcaea76027963aac7a9f48e13ad06 = $(`<div id="html_b1bfcaea76027963aac7a9f48e13ad06" style="width: 100.0%; height: 100.0%;">UNESCO Site: Drottningholm Palace</div>`)[0];
+                popup_b9ed00b6a0a9f2db17fe5c6f695f6c83.setContent(html_b1bfcaea76027963aac7a9f48e13ad06);
+            
+        
+
+        marker_85885ae105a09c6b3c6a64220cba55ce.bindPopup(popup_b9ed00b6a0a9f2db17fe5c6f695f6c83)
+        ;
+
+        
+    
+    
+            var marker_1a81a743bf27d795328abc3d30d1278f = L.marker(
+                [59.32306667, 17.885],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_21de03de4a08a3663c33d73c8786b965 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1a81a743bf27d795328abc3d30d1278f.setIcon(icon_21de03de4a08a3663c33d73c8786b965);
+        
+    
+        var popup_a8b6b5570d4f3e5a0e05c18d7e398bc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8725693dbace4e0db03c3ef51b49c06a = $(`<div id="html_8725693dbace4e0db03c3ef51b49c06a" style="width: 100.0%; height: 100.0%;">UNESCO Site: Drottningholm Palace Theatre</div>`)[0];
+                popup_a8b6b5570d4f3e5a0e05c18d7e398bc4.setContent(html_8725693dbace4e0db03c3ef51b49c06a);
+            
+        
+
+        marker_1a81a743bf27d795328abc3d30d1278f.bindPopup(popup_a8b6b5570d4f3e5a0e05c18d7e398bc4)
+        ;
+
+        
+    
+    
+            var marker_150d289e11a47b202e6ab9e1f620814b = L.marker(
+                [59.320277777, 17.879444444],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_150c3d2b6ffdc788debd22e73823de4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_150d289e11a47b202e6ab9e1f620814b.setIcon(icon_150c3d2b6ffdc788debd22e73823de4b);
+        
+    
+        var popup_3053cfc4761a0224c3f9ab302c15acaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3d3869197c4b31545be2d86ef9ec76d = $(`<div id="html_a3d3869197c4b31545be2d86ef9ec76d" style="width: 100.0%; height: 100.0%;">UNESCO Site: Gardens of Drottningholm Palace</div>`)[0];
+                popup_3053cfc4761a0224c3f9ab302c15acaf.setContent(html_a3d3869197c4b31545be2d86ef9ec76d);
+            
+        
+
+        marker_150d289e11a47b202e6ab9e1f620814b.bindPopup(popup_3053cfc4761a0224c3f9ab302c15acaf)
+        ;
+
+        
+    
+    
+            var marker_1569e2d2e089832a9c0671a58ebab286 = L.marker(
+                [59.321688888, 17.886380555],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_59967a77aa44474ce6cb5f3d6f6758bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1569e2d2e089832a9c0671a58ebab286.setIcon(icon_59967a77aa44474ce6cb5f3d6f6758bc);
+        
+    
+        var popup_bdbae8628c41a8d7c8349b17651a13dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35fb06f346c9b6229bb74ecfd1befc73 = $(`<div id="html_35fb06f346c9b6229bb74ecfd1befc73" style="width: 100.0%; height: 100.0%;">UNESCO Site: Royal Domain of Drottningholm</div>`)[0];
+                popup_bdbae8628c41a8d7c8349b17651a13dd.setContent(html_35fb06f346c9b6229bb74ecfd1befc73);
+            
+        
+
+        marker_1569e2d2e089832a9c0671a58ebab286.bindPopup(popup_bdbae8628c41a8d7c8349b17651a13dd)
+        ;
+
+        
+    
+    
+            var marker_1683c12bf31de61013dbd0884ce0db4b = L.marker(
+                [59.275555555, 18.099444444],
+                {
+}
+            ).addTo(marker_cluster_d02df02f93a671637f76be30eda4275b);
+        
+    
+            var icon_9d252c1eac893aacad6ab79cdfc71ce1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "ok-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1683c12bf31de61013dbd0884ce0db4b.setIcon(icon_9d252c1eac893aacad6ab79cdfc71ce1);
+        
+    
+        var popup_df49b9833a4f73f974e1e0ea91795f76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e79299739ac0bd714e28192d8d86fee = $(`<div id="html_3e79299739ac0bd714e28192d8d86fee" style="width: 100.0%; height: 100.0%;">UNESCO Site: Skogskyrkogården</div>`)[0];
+                popup_df49b9833a4f73f974e1e0ea91795f76.setContent(html_3e79299739ac0bd714e28192d8d86fee);
+            
+        
+
+        marker_1683c12bf31de61013dbd0884ce0db4b.bindPopup(popup_df49b9833a4f73f974e1e0ea91795f76)
+        ;
+
+        
+    
+    
+            marker_cluster_d02df02f93a671637f76be30eda4275b.addTo(map_7728464d039a5c6f75d7159291ef15e5);
+        
+</script>
+</html>

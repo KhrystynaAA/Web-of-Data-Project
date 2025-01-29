@@ -1,0 +1,19 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?capital ?label ?population
+WHERE {
+  SERVICE <https://query.wikidata.org/sparql> {
+    # List of capitals in Europe with a population over 1,000,000
+        
+    ?country wdt:P30 wd:Q46 .                 # Europe (continent)
+    ?capital wdt:P31 wd:Q515 ;                # Instance of: capital
+             wdt:P1082 ?population ;         # Population property
+             wdt:P17 ?country .             # Country
+    ?capital rdfs:label ?label .             
+    FILTER(LANG(?label) = "en")              # Filter by language
+    FILTER(?population > 500000 && ?population < 1000000)           # Population greater than 1 million
+  }
+}
+LIMIT 100

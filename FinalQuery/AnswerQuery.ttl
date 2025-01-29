@@ -1,0 +1,35 @@
+PREFIX uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX geof: <http://www.opengis.net/def/function/geosparql/>
+PREFIX wod: <https://paris-saclay.fr/project/wod/>
+
+SELECT ?capitalLabel ?capitalWKT ?population
+       (GROUP_CONCAT(?siteLabel; separator=", ") AS ?siteLabels)
+       (GROUP_CONCAT(?siteWKT; separator=", ") AS ?siteCoordinates)
+       (COUNT(?site) AS ?numSites)
+WHERE {
+  # Capital cities in Europe
+  ?capital a wod:Capital ;
+           rdfs:label ?capitalLabel ;
+    	   wod:population ?population;
+           geo:hasGeometry ?capitalGeom .
+    ?capitalGeom geo:asWKT ?capitalWKT .
+  
+  # UNESCO sites
+  ?site a wod:Site ;
+        rdfs:label ?siteLabel ;
+        geo:hasGeometry ?siteGeom.
+  ?siteGeom geo:asWKT ?siteWKT .
+  
+  # Bind the distance between the capital and the UNESCO site
+  BIND(geof:distance(?capitalWKT, ?siteWKT, uom:metre) AS ?distanceBetweenCapitalAndSite)
+  
+  # Filter for UNESCO sites within 50 km (50,000 meters)
+  FILTER(?distanceBetweenCapitalAndSite < 50000)
+}
+GROUP BY ?capitalLabel ?capitalWKT ?population
+ORDER BY DESC(?numSites) DESC(?population)
+LIMIT 1

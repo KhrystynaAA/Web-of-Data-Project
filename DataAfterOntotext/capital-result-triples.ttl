@@ -1,0 +1,279 @@
+@base <https://paris-saclay.fr/project/wod/> .
+@prefix wod: <https://paris-saclay.fr/project/wod/> .
+@prefix shp: <https://paris-saclay.fr/project/wod/shape/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix cpt: <https://paris-saclay.fr/project/wod/capital/> .
+
+cpt:727 a wod:Capital, geo:Feature;
+  rdfs:label "Amsterdam"@en;
+  wod:isCapitalOf "Kingdom of the Netherlands"@en;
+  geo:hasGeometry shp:727 .
+
+shp:727 geo:asWKT "Point(4.883333333 52.366666666)"^^geo:wktLiteral .
+
+cpt:1863 a wod:Capital, geo:Feature;
+  rdfs:label "Andorra la Vella"@en;
+  wod:isCapitalOf "Andorra"@en;
+  geo:hasGeometry shp:1863 .
+
+shp:1863 geo:asWKT "Point(1.5 42.5)"^^geo:wktLiteral .
+
+cpt:1524 a wod:Capital, geo:Feature;
+  rdfs:label "Athens"@en;
+  wod:isCapitalOf "Greece"@en;
+  geo:hasGeometry shp:1524 .
+
+shp:1524 geo:asWKT "Point(23.728055555 37.984166666)"^^geo:wktLiteral .
+
+cpt:64 a wod:Capital, geo:Feature;
+  rdfs:label "Berlin"@en;
+  wod:isCapitalOf "Germany"@en;
+  geo:hasGeometry shp:64 .
+
+shp:64 geo:asWKT "Point(13.383333333 52.516666666)"^^geo:wktLiteral .
+
+cpt:70 a wod:Capital, geo:Feature;
+  rdfs:label "Bern"@en;
+  wod:isCapitalOf "Switzerland"@en;
+  geo:hasGeometry shp:70 .
+
+shp:70 geo:asWKT "Point(7.44743 46.94798)"^^geo:wktLiteral .
+
+cpt:1780 a wod:Capital, geo:Feature;
+  rdfs:label "Bratislava"@en;
+  wod:isCapitalOf "Slovakia"@en;
+  geo:hasGeometry shp:1780 .
+
+shp:1780 geo:asWKT "Point(17.112777777 48.144722222)"^^geo:wktLiteral .
+
+cpt:19660 a wod:Capital, geo:Feature;
+  rdfs:label "Bucharest"@en;
+  wod:isCapitalOf "Romania"@en;
+  geo:hasGeometry shp:19660 .
+
+shp:19660 geo:asWKT "Point(26.097777777 44.413361111)"^^geo:wktLiteral .
+
+cpt:1781 a wod:Capital, geo:Feature;
+  rdfs:label "Budapest"@en;
+  wod:isCapitalOf "Hungary"@en;
+  geo:hasGeometry shp:1781 .
+
+shp:1781 geo:asWKT "Point(19.040833333 47.498333333)"^^geo:wktLiteral .
+
+cpt:239 a wod:Capital, geo:Feature;
+  rdfs:label "City of Brussels"@en;
+  wod:isCapitalOf "Belgium"@en;
+  geo:hasGeometry shp:239 .
+
+shp:239 geo:asWKT "Point(4.351666666 50.846666666)"^^geo:wktLiteral .
+
+cpt:1748 a wod:Capital, geo:Feature;
+  rdfs:label "Copenhagen"@en;
+  wod:isCapitalOf "Denmark"@en;
+  geo:hasGeometry shp:1748 .
+
+shp:1748 geo:asWKT "Point(12.568888888 55.676111111)"^^geo:wktLiteral .
+
+cpt:1761 a wod:Capital, geo:Feature;
+  rdfs:label "Dublin"@en;
+  wod:isCapitalOf "Ireland"@en;
+  geo:hasGeometry shp:1761 .
+
+shp:1761 geo:asWKT "Point(-6.260277777 53.349722222)"^^geo:wktLiteral .
+
+cpt:1757 a wod:Capital, geo:Feature;
+  rdfs:label "Helsinki"@en;
+  wod:isCapitalOf "Finland"@en;
+  geo:hasGeometry shp:1757 .
+
+shp:1757 geo:asWKT "Point(24.9375 60.170833333)"^^geo:wktLiteral .
+
+cpt:597 a wod:Capital, geo:Feature;
+  rdfs:label "Lisbon"@en;
+  wod:isCapitalOf "Portugal"@en;
+  geo:hasGeometry shp:597 .
+
+shp:597 geo:asWKT "Point(-9.139016 38.708042)"^^geo:wktLiteral .
+
+cpt:437 a wod:Capital, geo:Feature;
+  rdfs:label "Ljubljana"@en;
+  wod:isCapitalOf "Slovenia"@en;
+  geo:hasGeometry shp:437 .
+
+shp:437 geo:asWKT "Point(14.506111111 46.051388888)"^^geo:wktLiteral .
+
+cpt:84 a wod:Capital, geo:Feature;
+  rdfs:label "London"@en;
+  wod:isCapitalOf "United Kingdom"@en;
+  geo:hasGeometry shp:84 .
+
+shp:84 geo:asWKT "Point(-0.1275 51.507222222)"^^geo:wktLiteral .
+
+cpt:1842 a wod:Capital, geo:Feature;
+  rdfs:label "Luxembourg"@en;
+  wod:isCapitalOf "Luxembourg"@en;
+  geo:hasGeometry shp:1842 .
+
+shp:1842 geo:asWKT "Point(6.132777777 49.610555555)"^^geo:wktLiteral .
+
+cpt:2807 a wod:Capital, geo:Feature;
+  rdfs:label "Madrid"@en;
+  wod:isCapitalOf "Spain"@en;
+  geo:hasGeometry shp:2807 .
+
+shp:2807 geo:asWKT "Point(-3.703333333 40.416944444)"^^geo:wktLiteral .
+
+cpt:2280 a wod:Capital, geo:Feature;
+  rdfs:label "Minsk"@en;
+  wod:isCapitalOf "Belarus"@en;
+  geo:hasGeometry shp:2280 .
+
+shp:2280 geo:asWKT "Point(27.561837 53.902246)"^^geo:wktLiteral .
+
+cpt:649 a wod:Capital, geo:Feature;
+  rdfs:label "Moscow"@en;
+  wod:isCapitalOf "Russia"@en;
+  geo:hasGeometry shp:649 .
+
+shp:649 geo:asWKT "Point(37.6175 55.750555555)"^^geo:wktLiteral .
+
+cpt:3856 a wod:Capital, geo:Feature;
+  rdfs:label "Nicosia"@en;
+  wod:isCapitalOf "Cyprus"@en;
+  geo:hasGeometry shp:3856 .
+
+shp:3856 geo:asWKT "Point(33.365 35.1725)"^^geo:wktLiteral .
+
+cpt:585 a wod:Capital, geo:Feature;
+  rdfs:label "Oslo"@en;
+  wod:isCapitalOf "Norway"@en;
+  geo:hasGeometry shp:585 .
+
+shp:585 geo:asWKT "Point(10.738888888 59.913333333)"^^geo:wktLiteral .
+
+cpt:90 a wod:Capital, geo:Feature;
+  rdfs:label "Paris"@en;
+  wod:isCapitalOf "France"@en;
+  geo:hasGeometry shp:90 .
+
+shp:90 geo:asWKT "Point(2.352222222 48.856666666)"^^geo:wktLiteral .
+
+cpt:23564 a wod:Capital, geo:Feature;
+  rdfs:label "Podgorica"@en;
+  wod:isCapitalOf "Montenegro"@en;
+  geo:hasGeometry shp:23564 .
+
+shp:23564 geo:asWKT "Point(19.262777777 42.441388888)"^^geo:wktLiteral .
+
+cpt:1085 a wod:Capital, geo:Feature;
+  rdfs:label "Prague"@en;
+  wod:isCapitalOf "Czech Republic"@en;
+  geo:hasGeometry shp:1085 .
+
+shp:1085 geo:asWKT "Point(14.421388888 50.0875)"^^geo:wktLiteral .
+
+cpt:25270 a wod:Capital, geo:Feature;
+  rdfs:label "Pristina"@en;
+  wod:isCapitalOf "Kosovo"@en;
+  geo:hasGeometry shp:25270 .
+
+shp:25270 geo:asWKT "Point(21.166666666 42.666666666)"^^geo:wktLiteral .
+
+cpt:1764 a wod:Capital, geo:Feature;
+  rdfs:label "Reykjavík"@en;
+  wod:isCapitalOf "Iceland"@en;
+  geo:hasGeometry shp:1764 .
+
+shp:1764 geo:asWKT "Point(-21.935 64.1475)"^^geo:wktLiteral .
+
+cpt:1773 a wod:Capital, geo:Feature;
+  rdfs:label "Riga"@en;
+  wod:isCapitalOf "Latvia"@en;
+  geo:hasGeometry shp:1773 .
+
+shp:1773 geo:asWKT "Point(24.106944444 56.9475)"^^geo:wktLiteral .
+
+cpt:220 a wod:Capital, geo:Feature;
+  rdfs:label "Rome"@en;
+  wod:isCapitalOf "Italy"@en;
+  geo:hasGeometry shp:220 .
+
+shp:220 geo:asWKT "Point(12.482777777 41.893055555)"^^geo:wktLiteral .
+
+cpt:11194 a wod:Capital, geo:Feature;
+  rdfs:label "Sarajevo"@en;
+  wod:isCapitalOf "Bosnia and Herzegovina"@en;
+  geo:hasGeometry shp:11194 .
+
+shp:11194 geo:asWKT "Point(18.413055555 43.856388888)"^^geo:wktLiteral .
+
+cpt:384 a wod:Capital, geo:Feature;
+  rdfs:label "Skopje"@en;
+  wod:isCapitalOf "North Macedonia"@en;
+  geo:hasGeometry shp:384 .
+
+shp:384 geo:asWKT "Point(21.431666666 41.996111111)"^^geo:wktLiteral .
+
+cpt:472 a wod:Capital, geo:Feature;
+  rdfs:label "Sofia"@en;
+  wod:isCapitalOf "Bulgaria"@en;
+  geo:hasGeometry shp:472 .
+
+shp:472 geo:asWKT "Point(23.321726 42.697886)"^^geo:wktLiteral .
+
+cpt:1754 a wod:Capital, geo:Feature;
+  rdfs:label "Stockholm"@en;
+  wod:isCapitalOf "Sweden"@en;
+  geo:hasGeometry shp:1754 .
+
+shp:1754 geo:asWKT "Point(18.068611111 59.329444444)"^^geo:wktLiteral .
+
+cpt:1770 a wod:Capital, geo:Feature;
+  rdfs:label "Tallinn"@en;
+  wod:isCapitalOf "Estonia"@en;
+  geo:hasGeometry shp:1770 .
+
+shp:1770 geo:asWKT "Point(24.745 59.437222222)"^^geo:wktLiteral .
+
+cpt:19689 a wod:Capital, geo:Feature;
+  rdfs:label "Tirana"@en;
+  wod:isCapitalOf "Albania"@en;
+  geo:hasGeometry shp:19689 .
+
+shp:19689 geo:asWKT "Point(19.817777777 41.328888888)"^^geo:wktLiteral .
+
+cpt:1844 a wod:Capital, geo:Feature;
+  rdfs:label "Vaduz"@en;
+  wod:isCapitalOf "Liechtenstein"@en;
+  geo:hasGeometry shp:1844 .
+
+shp:1844 geo:asWKT "Point(9.521944444 47.139722222)"^^geo:wktLiteral .
+
+cpt:23800 a wod:Capital, geo:Feature;
+  rdfs:label "Valletta"@en;
+  wod:isCapitalOf "Malta"@en;
+  geo:hasGeometry shp:23800 .
+
+shp:23800 geo:asWKT "Point(14.5125 35.897777777)"^^geo:wktLiteral .
+
+cpt:216 a wod:Capital, geo:Feature;
+  rdfs:label "Vilnius"@en;
+  wod:isCapitalOf "Lithuania"@en;
+  geo:hasGeometry shp:216 .
+
+shp:216 geo:asWKT "Point(25.28 54.687222222)"^^geo:wktLiteral .
+
+cpt:270 a wod:Capital, geo:Feature;
+  rdfs:label "Warsaw"@en;
+  wod:isCapitalOf "Poland"@en;
+  geo:hasGeometry shp:270 .
+
+shp:270 geo:asWKT "Point(21.011111111 52.23)"^^geo:wktLiteral .
+
+cpt:1435 a wod:Capital, geo:Feature;
+  rdfs:label "Zagreb"@en;
+  wod:isCapitalOf "Croatia"@en;
+  geo:hasGeometry shp:1435 .
+
+shp:1435 geo:asWKT "Point(15.977222222 45.813055555)"^^geo:wktLiteral .

@@ -1,0 +1,31 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wod: <https://paris-saclay.fr/project/wod/>
+
+INSERT {
+  ?capital wod:population ?population .  # Insert population for the capital
+}
+WHERE {
+  # Subquery to get population data from Wikidata that satisfies the condition of over 1,000,000 inhabitants
+  {
+    SELECT ?label ?population
+    WHERE {
+      SERVICE <https://query.wikidata.org/sparql> {
+        ?wikidataCapital wdt:P31 wd:Q515 ;              # Instance of: capital
+                         wdt:P1082 ?population ;      # Population property
+                         wdt:P17 ?country .          # Country
+        ?wikidataCapital rdfs:label ?label .             
+        FILTER(LANG(?label) = "en")                    # Filter by language
+        ?country wdt:P30 wd:Q46 .                       # Europe (continent)
+        FILTER(?population > 500000 && ?population < 1000000)                   
+      }
+    }
+  }
+
+  # Matching capital in local database with Wikidata label
+  ?capital a wod:Capital ;
+           rdfs:label ?capitalName .
+  FILTER(LANG(?capitalName) = "en")                    # Filter local capital names by English
+  FILTER(STR(?capitalName) = STR(?label))              # Match capital names
+}
