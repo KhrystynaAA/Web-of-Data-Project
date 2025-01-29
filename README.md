@@ -5,3 +5,5 @@ This project aims to identify the European capital with a population between
 heritage sites. The goal of this analysis is to provide insights into which
 capital city with a medium population is most suitable for visiting multiple
 UNESCO heritage sites within a short distance.
+
+All necessary information about the project can be found in the file **reportWODProject.pdf**
